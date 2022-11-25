@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(105, 94, 94);
+  box-sizing: border-box;
+  /* padding-left: 160px; */
+}
+
+@media (max-width <= 600) {
+  .navbar-toggler {
+    display: hidden;
+  }
+}

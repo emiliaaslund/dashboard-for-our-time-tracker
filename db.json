@@ -1,0 +1,124 @@
+{
+  "projects": [
+    {
+      "id": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "name": "Söndag 20/11",
+      "price": 2500
+    },
+    {
+      "id": "e8ab4166-4394-447b-9286-8d4b4144419b",
+      "name": "Projekt 1",
+      "price": 100
+    },
+    {
+      "id": "d0ececfc-eb4a-431a-b4ac-46c1e9bbfb59",
+      "name": "Projekt 2",
+      "price": 2000
+    }
+  ],
+  "tasks": [
+    {
+      "id": "2090d435-be54-4e0f-8e85-cd3448919a8a",
+      "name": "KOLLA F1 <3",
+      "projectId": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "date": "2022-11-20"
+    },
+    {
+      "id": "3d68e0bb-74e2-4b90-85f2-dffb0105a6a2",
+      "name": "Städa hela dagen lång",
+      "projectId": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "date": "2022-11-21"
+    },
+    {
+      "id": "b1453499-5b04-4436-a2be-34337b3bf95e",
+      "name": "Uppgift 1",
+      "projectId": "e8ab4166-4394-447b-9286-8d4b4144419b",
+      "date": "2022-11-25"
+    },
+    {
+      "id": "0bfd5a46-fc02-4664-b59d-fc4c2d9310d0",
+      "name": "Uppgift 2",
+      "projectId": "d0ececfc-eb4a-431a-b4ac-46c1e9bbfb59",
+      "date": "2022-11-25"
+    }
+  ],
+  "timelogs": [
+    {
+      "projectId": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "name": "KOLLA F1 <3",
+      "startTime": "15:33:13",
+      "endTime": "16:33:13",
+      "startDate": "2022-10-20",
+      "endDate": "2022-10-20",
+      "id": "1c133513-088a-4757-8f95-afbfd8456827"
+    },
+    {
+      "projectId": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "name": "Städa hela dagen lång",
+      "startTime": "17:51:27",
+      "endTime": "20:51:27",
+      "startDate": "2022-11-22",
+      "endDate": "2022-11-22",
+      "id": "cf8f8000-10eb-4cc7-8036-d79766b01f44"
+    },
+    {
+      "projectId": "e8ab4166-4394-447b-9286-8d4b4144419b",
+      "name": "Uppgift 1",
+      "startTime": "14:23:56",
+      "endTime": "17:23:57",
+      "startDate": "2022-11-25",
+      "endDate": "2022-11-25",
+      "id": "811d13f8-6f5d-4787-b60b-6b978b56f8c9"
+    },
+    {
+      "projectId": "d0ececfc-eb4a-431a-b4ac-46c1e9bbfb59",
+      "name": "Uppgift 2",
+      "startTime": "10:25:22",
+      "endTime": "11:15:23",
+      "startDate": "2022-11-25",
+      "endDate": "2022-11-25",
+      "id": "8e35a394-f169-4048-a753-f2ca8f412a44"
+    },
+    {
+      "projectId": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "name": "KOLLA F1 <3",
+      "startTime": "13:27:58",
+      "endTime": "18:05:59",
+      "startDate": "2022-11-25",
+      "endDate": "2022-11-25",
+      "id": "42e59460-525e-43b8-8225-11630ca35169"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "createdDate": "2022-11-25T20:59:35.984Z",
+      "dueDate": "2021-11-24",
+      "clientName": "Emilia",
+      "projectName": "4793c03c-bcfe-4728-ae3b-fc4e6e001788",
+      "tasks": "",
+      "totalPrice": 2500.6944444444443,
+      "paid": "Ej Betald"
+    },
+    {
+      "id": 3,
+      "createdDate": "2022-11-25T20:59:35.984Z",
+      "dueDate": "2022-12-25",
+      "clientName": "Fanny",
+      "projectName": "e8ab4166-4394-447b-9286-8d4b4144419b",
+      "tasks": "",
+      "totalPrice": 300.02777777777777,
+      "paid": "Ej Betald"
+    },
+    {
+      "id": 4,
+      "createdDate": "2022-11-25T21:10:48.334Z",
+      "dueDate": "2022-12-25",
+      "clientName": "KattElsa",
+      "projectName": "d0ececfc-eb4a-431a-b4ac-46c1e9bbfb59",
+      "tasks": "",
+      "totalPrice": 1667.2222222222222,
+      "paid": "Ej Betald"
+    }
+  ]
+}
