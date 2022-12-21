@@ -96,8 +96,8 @@ function ProjectPage({}: Props) {
                     .filter((project) => project.id === task.projectId)
 
                     .map((project) => (
-                      <tr key={project.id}>
-                        <td>{task.name}</td>
+                      <tr key={project.id} data-testid={"tasklist"}>
+                        <td data-testid={"testTask"}>{task.name}</td>
                         <td>{project.name}</td>
 
                         <td>
@@ -108,7 +108,10 @@ function ProjectPage({}: Props) {
                               deleteTask(task.id);
                             }}
                           >
-                            <i className="bi bi-trash3"></i>
+                            <i
+                              className="bi bi-trash3"
+                              data-testid={"deleteTaskBtn"}
+                            ></i>
                           </button>
                         </td>
                       </tr>
@@ -138,8 +141,8 @@ function ProjectPage({}: Props) {
                       className="table-table align-middle"
                       key={project.id}
                     >
-                      <tr>
-                        <td>{project.name}</td>
+                      <tr data-testid={"projectlist"}>
+                        <td data-testid={"project"}>{project.name}</td>
                         <td>{filtredTasks.length}</td>
                         <td>
                           <button
@@ -150,7 +153,10 @@ function ProjectPage({}: Props) {
                               deleteProject(project.id);
                             }}
                           >
-                            <i className="bi bi-trash3"></i>
+                            <i
+                              className="bi bi-trash3"
+                              data-testid={"deletebtn"}
+                            ></i>
                           </button>
                         </td>
                       </tr>

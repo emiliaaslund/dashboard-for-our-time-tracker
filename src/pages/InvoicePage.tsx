@@ -118,6 +118,7 @@ function InvoicePage() {
                   <input
                     required
                     type="text"
+                    data-testid={"inputName"}
                     value={invoice.clientName || ""}
                     className="form-control"
                     onChange={(e) =>
@@ -129,6 +130,7 @@ function InvoicePage() {
                   <label className="form-label">Project name:</label>
                   <select
                     className="form-select"
+                    data-testid={"selectProject"}
                     required
                     value={project.id || ""}
                     onChange={(e: React.FormEvent<HTMLSelectElement>) => {
@@ -167,7 +169,11 @@ function InvoicePage() {
                           aria-labelledby="dropdownMenuButton1"
                         >
                           {projectTask.map((pt) => (
-                            <li className="ms-2 dropdown-item p-2" key={pt.id}>
+                            <li
+                              className="ms-2 dropdown-item p-2"
+                              key={pt.id}
+                              data-testid={"bajs"}
+                            >
                               {pt.name}
                               <button
                                 key={pt.id}
@@ -182,8 +188,13 @@ function InvoicePage() {
                                     ...filterTask,
                                   ]);
                                 }}
+                                data-testid={"bajskorv"}
                               >
-                                <i className="bi bi-check2-square"></i>
+                                <i
+                                  className="bi bi-check2-square"
+                                  // data-testid={"selectTask"}
+                                  data-testid={"bajs"}
+                                ></i>
                               </button>
                             </li>
                           ))}
@@ -251,8 +262,8 @@ function InvoicePage() {
                 </thead>
                 {invoices.map((invoice) => (
                   <tbody className="table-table align-middle" key={invoice.id}>
-                    <tr>
-                      <td>{invoice.clientName}</td>
+                    <tr data-testid={"invoicelist"}>
+                      <td data-testid={"testInvoice"}>{invoice.clientName}</td>
                       <td>{invoice.dueDate}</td>
                       <td>{invoice.totalPrice}</td>
                       <td>{invoice.paid}</td>
